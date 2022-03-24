@@ -38,11 +38,11 @@ function displayTemperature(response) {
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   iconElement.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}d@2x.png`
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`
   );
 }
 
-let city = "Livorno";
+let city = "Barcelona";
 let apiKey = "a58132974e1508fb139cd5dab2b170ec";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
